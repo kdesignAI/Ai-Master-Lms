@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>এআই মাস্টার | ভবিষ্যতের এআই এবং ডিজাইন শিখুন</title>
+    <meta name="description" content="বাংলাদেশের সেরা এআই লার্নিং প্ল্যাটফর্ম। জেনারেটিভ এআই এবং ভিজ্যুয়াল ডিজাইন শিখে আপনার ক্যারিয়ার উন্নত করুন।" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Hind Siliguri', sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .bg-gradient-accent {
+        background: linear-gradient(135deg, #D946EF, #22C55E);
+      }
+      .text-gradient-accent {
+        background: linear-gradient(135deg, #D946EF, #22C55E);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0.2em 0;
+        margin: -0.2em 0;
+        display: inline-block;
+        line-height: 1.5;
+      }
+      .animate-pulse-slow {
+        animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.3; }
+      }
+      
+      /* Smooth & Uninterrupted Marquee Animation */
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      @keyframes marquee-reverse {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+      }
+      .animate-marquee {
+        animation: marquee 60s linear infinite !important;
+        will-change: transform;
+      }
+      .animate-marquee-reverse {
+        animation: marquee-reverse 60s linear infinite !important;
+        will-change: transform;
+      }
+      
+      /* Ensure animation persists during scroll and interaction */
+      .marquee-wrapper {
+        display: flex;
+        width: max-content;
+        flex-direction: row;
+      }
+
+      /* Motion Border Animation */
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .animate-spin-slower {
+        animation: spin-slow 8s linear infinite;
+      }
+      
+      .motion-border-container {
+        position: relative;
+        padding: 1.5px;
+        overflow: hidden;
+      }
+      .motion-border-gradient {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: conic-gradient(
+          from 0deg,
+          transparent 0deg,
+          transparent 120deg,
+          #D946EF 180deg,
+          #22C55E 240deg,
+          transparent 300deg,
+          transparent 360deg
+        );
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D946EF;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      h1, h2, h3, h4 {
+        line-height: 1.6 !important;
+        overflow: visible !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
